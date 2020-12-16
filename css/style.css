@@ -1,0 +1,75 @@
+.body{
+    width: 100%;
+    height: 100%;
+    animation: bgcolor infinite 45s;
+    transition: ease;
+}
+.innerbox{
+    width: 95%;
+    height: 90%;
+    -webkit-filter: blur(12px);
+}
+
+.position1{
+    position: static;
+    bottom: 40px;
+    right: 40px;
+}
+
+.position2{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.move1{ 
+    animation-name: move1;
+    animation-duration:3s; 
+    animation-fill-mode:  forwards;
+    animation-iteration-count:  infinite; 
+    animation-delay: 5s;
+} 
+
+@keyframes bgcolor{
+    0% { 
+        background: #ff6600; 
+    }
+    50% { 
+        background: #241514; 
+    }
+    100% { 
+        background: #4d2f2a; 
+    }
+}
+
+.css-selector {
+    background: linear-gradient(180deg, #ffae00 10%, #ef0000 15%, #ca4228 29%, #10133a 31% , #422745 40%, #e40000 45%);
+    background-size: 1200% 1200%;
+
+
+    -webkit-animation: AnimationName 45s ease infinite;
+    -moz-animation: AnimationName 45s ease infinite;
+    animation: AnimationName 45s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position: 50% 50%;}
+    60%{background-position: 50% 50%;}
+    100%{background-position:50% 100%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position: 50% 50%;}
+    60%{background-position: 50% 50%;}
+    100%{background-position:50% 100%}
+}
+@keyframes AnimationName { 
+    0%{background-position:51% 0%}
+    50%{background-position: 50% 50%;}
+    60%{background-position: 50% 50%;}
+    100%{background-position:50% 100%}
+}
+
+
+
